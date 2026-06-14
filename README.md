@@ -28,19 +28,19 @@ The template combines minimalism, performance and luxury aesthetics to create a 
 
 ### 🏠 Home Page
 
-[ قرار دادن لینک یا تصویر صفحه اصلی ]
+![collectionshot](https://github.com/ArianGhaderi99/AURUM-Luxury-Watch-Template/blob/main/screenshot/homescreen.png)
 
 ---
 
 ### ⚙ Technology Page
 
-[ قرار دادن لینک یا تصویر صفحه تکنولوژی ]
+![collectionshot](https://github.com/ArianGhaderi99/AURUM-Luxury-Watch-Template/blob/main/screenshot/technologyscreen.png)
 
 ---
 
 ### ⌚ Collection Page
 
-!(collectionshot)[https://github.com/ArianGhaderi99/AURUM-Luxury-Watch-Template/blob/main/screenshot/collectionscreen.png]
+![collectionshot](https://github.com/ArianGhaderi99/AURUM-Luxury-Watch-Template/blob/main/screenshot/collectionscreen.png)
 
 ---
 
