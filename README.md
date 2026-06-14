@@ -40,7 +40,7 @@ The template combines minimalism, performance and luxury aesthetics to create a 
 
 ### ⌚ Collection Page
 
-[ https://github.com/ArianGhaderi99/AURUM-Luxury-Watch-Template/blob/main/screenshot/collectionscreen.png ]
+(collectionshot)[ https://github.com/ArianGhaderi99/AURUM-Luxury-Watch-Template/blob/main/screenshot/collectionscreen.png ]
 
 ---
 
