@@ -1,0 +1,555 @@
+/* =========================
+   GALLERY HERO
+========================= */
+
+.gallery-hero {
+
+    height: 85vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.85)
+    ),
+    url('../assets/images/gallery-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+.gallery-hero span {
+
+    color: var(--gold);
+
+    letter-spacing: 4px;
+
+}
+
+.gallery-hero h1 {
+
+    font-size: 80px;
+
+    margin: 25px 0;
+
+}
+
+.gallery-hero p {
+
+    color: #bdbdbd;
+
+    font-size: 20px;
+
+}
+
+/* =========================
+   MASONRY GALLERY
+========================= */
+
+.masonry-gallery {
+
+    width: 90%;
+
+    margin: 120px auto;
+
+    columns: 3;
+
+    column-gap: 25px;
+
+}
+
+.gallery-item {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    margin-bottom: 25px;
+
+    break-inside: avoid;
+
+    cursor: pointer;
+
+}
+
+.gallery-item img {
+
+    width: 100%;
+
+    display: block;
+
+    transition: .6s;
+
+}
+
+.gallery-item:hover img {
+
+    transform: scale(1.08);
+
+}
+
+.gallery-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.65);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    opacity: 0;
+
+    transition: .4s;
+
+}
+
+.gallery-item:hover .gallery-overlay {
+
+    opacity: 1;
+
+}
+
+.gallery-overlay h3 {
+
+    color: white;
+
+    font-size: 26px;
+
+}
+
+/* =========================
+   VIDEO SECTION
+========================= */
+
+.gallery-video {
+
+    position: relative;
+
+    height: 700px;
+
+    overflow: hidden;
+
+}
+
+.gallery-video video {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.video-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.5);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.video-overlay h2 {
+
+    font-size: 70px;
+
+    color: white;
+
+}
+
+/* =========================
+   SHOWCASE GRID
+========================= */
+
+.showcase-grid {
+
+    width: 90%;
+
+    margin: 150px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+
+}
+
+.showcase-card {
+
+    background: #111;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: .4s;
+
+}
+
+.showcase-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+.showcase-card img {
+
+    width: 100%;
+
+    display: block;
+
+}
+
+.showcase-card h3 {
+
+    padding: 25px;
+
+    text-align: center;
+
+}
+
+/* =========================
+   FEATURED
+========================= */
+
+.gallery-featured {
+
+    width: 90%;
+
+    margin: auto;
+
+    padding: 120px 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+.featured-image {
+
+    text-align: center;
+
+}
+
+.featured-image img {
+
+    max-width: 100%;
+
+}
+
+.featured-content {
+
+    text-align: right;
+
+}
+
+.featured-content span {
+
+    color: var(--gold);
+
+}
+
+.featured-content h2 {
+
+    font-size: 60px;
+
+    margin: 25px 0;
+
+}
+
+.featured-content p {
+
+    color: #bdbdbd;
+
+    line-height: 2;
+
+}
+
+/* =========================
+   PREMIUM CARDS
+========================= */
+
+.premium-cards {
+
+    width: 90%;
+
+    margin: auto;
+
+    padding-bottom: 140px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+
+}
+
+.premium-card {
+
+    background: linear-gradient(
+        135deg,
+        #141414,
+        #222
+    );
+
+    border-radius: 25px;
+
+    padding: 60px 40px;
+
+    text-align: center;
+
+    transition: .5s;
+
+}
+
+.premium-card:hover {
+
+    transform:
+    rotateX(10deg)
+    translateY(-10px);
+
+}
+
+.premium-card h3 {
+
+    color: var(--gold);
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+
+}
+
+/* =========================
+   INSTAGRAM
+========================= */
+
+.instagram-feed {
+
+    width: 90%;
+
+    margin: auto;
+
+    padding-bottom: 150px;
+
+}
+
+.instagram-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 15px;
+
+}
+
+.instagram-grid img {
+
+    width: 100%;
+
+    border-radius: 15px;
+
+    transition: .4s;
+
+}
+
+.instagram-grid img:hover {
+
+    transform: scale(1.05);
+
+}
+
+/* =========================
+   CTA
+========================= */
+
+.gallery-cta {
+
+    text-align: center;
+
+    padding: 150px 5%;
+
+    background:
+    linear-gradient(
+        rgba(212,175,55,.08),
+        transparent
+    );
+
+}
+
+.gallery-cta h2 {
+
+    font-size: 60px;
+
+    margin-bottom: 40px;
+
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.95);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 99999;
+
+}
+
+.lightbox.active {
+
+    display: flex;
+
+}
+
+.lightbox-image {
+
+    max-width: 90%;
+
+    max-height: 90%;
+
+}
+
+.close-lightbox {
+
+    position: absolute;
+
+    top: 30px;
+
+    left: 40px;
+
+    font-size: 50px;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .gallery-featured,
+    .showcase-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .premium-cards{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .masonry-gallery{
+
+        columns:2;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .masonry-gallery{
+
+        columns:1;
+
+    }
+
+    .premium-cards,
+    .instagram-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-hero h1{
+
+        font-size:45px;
+
+    }
+
+    .featured-content h2{
+
+        font-size:38px;
+
+    }
+
+    .gallery-cta h2{
+
+        font-size:36px;
+
+    }
+
+    .video-overlay h2{
+
+        font-size:40px;
+
+    }
+
+}
+
+
+
+/* .gallery-item.large img {
+
+    min-height: 500px;
+
+    object-fit: cover;
+
+}
+
+.gallery-item.tall img {
+
+    min-height: 700px;
+
+    object-fit: cover;
+
+} */

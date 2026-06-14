@@ -1,0 +1,386 @@
+/* =========================
+FADE UP
+========================= */
+
+@keyframes fadeUp {
+
+0% {
+
+opacity: 0;
+transform: translateY(80px);
+
+}
+
+100% {
+
+opacity: 1;
+transform: translateY(0);
+
+}
+
+}
+
+/* =========================
+FADE DOWN
+========================= */
+
+@keyframes fadeDown {
+
+0% {
+
+opacity: 0;
+transform: translateY(-80px);
+
+}
+
+100% {
+
+opacity: 1;
+transform: translateY(0);
+
+}
+
+}
+
+/* =========================
+FADE LEFT
+========================= */
+
+@keyframes fadeLeft {
+
+0% {
+
+opacity: 0;
+transform: translateX(80px);
+
+}
+
+100% {
+
+opacity: 1;
+transform: translateX(0);
+
+}
+
+}
+
+/* =========================
+FADE RIGHT
+========================= */
+
+@keyframes fadeRight {
+
+0% {
+
+opacity: 0;
+transform: translateX(-80px);
+
+}
+
+100% {
+
+opacity: 1;
+transform: translateX(0);
+
+}
+
+}
+
+/* =========================
+ZOOM IN
+========================= */
+
+@keyframes zoomIn {
+
+0% {
+
+opacity: 0;
+transform: scale(.8);
+
+}
+
+100% {
+
+opacity: 1;
+transform: scale(1);
+
+}
+
+}
+
+/* =========================
+FLOAT
+========================= */
+
+@keyframes float {
+
+0% {
+
+transform: translateY(0);
+
+}
+
+50% {
+
+transform: translateY(-20px);
+
+}
+
+100% {
+
+transform: translateY(0);
+
+}
+
+}
+
+/* =========================
+ROTATE SLOW
+========================= */
+
+@keyframes rotateSlow {
+
+0% {
+
+transform: rotate(0deg);
+
+}
+
+100% {
+
+transform: rotate(360deg);
+
+}
+
+}
+
+/* =========================
+GLOW
+========================= */
+
+@keyframes glow {
+
+0% {
+
+box-shadow: 0 0 10px rgba(212,175,55,.2);
+
+}
+
+50% {
+
+box-shadow: 0 0 40px rgba(212,175,55,.8);
+
+}
+
+100% {
+
+box-shadow: 0 0 10px rgba(212,175,55,.2);
+
+}
+
+}
+
+/* =========================
+GOLD SHINE
+========================= */
+
+@keyframes goldShine {
+
+0% {
+
+background-position: -300px;
+
+}
+
+100% {
+
+background-position: 300px;
+
+}
+
+}
+
+/* =========================
+BORDER FLOW
+========================= */
+
+@keyframes borderFlow {
+
+0% {
+
+background-position: 0 0;
+
+}
+
+100% {
+
+background-position: 400px 0;
+
+}
+
+}
+
+/* =========================
+PULSE
+========================= */
+
+@keyframes pulse {
+
+0% {
+
+transform: scale(1);
+
+}
+
+50% {
+
+transform: scale(1.05);
+
+}
+
+100% {
+
+transform: scale(1);
+
+}
+
+}
+
+/* =========================
+REVEAL CLASSES
+========================= */
+
+.fade-up {
+
+animation: fadeUp 1s ease forwards;
+
+}
+
+.fade-down {
+
+animation: fadeDown 1s ease forwards;
+
+}
+
+.fade-left {
+
+animation: fadeLeft 1s ease forwards;
+
+}
+
+.fade-right {
+
+animation: fadeRight 1s ease forwards;
+
+}
+
+.zoom-in {
+
+animation: zoomIn 1s ease forwards;
+
+}
+
+.float {
+
+animation: float 4s ease-in-out infinite;
+
+}
+
+.rotate-slow {
+
+animation: rotateSlow 20s linear infinite;
+
+}
+
+.pulse {
+
+animation: pulse 2s infinite;
+
+}
+
+.glow {
+
+animation: glow 2s infinite;
+
+}
+
+/* =========================
+HOVER EFFECTS
+========================= */
+
+.hover-lift {
+
+transition: .4s;
+
+}
+
+.hover-lift:hover {
+
+transform: translateY(-12px);
+
+}
+
+.hover-scale {
+
+transition: .4s;
+
+}
+
+.hover-scale:hover {
+
+transform: scale(1.05);
+
+}
+
+.hover-rotate {
+
+transition: .4s;
+
+}
+
+.hover-rotate:hover {
+
+transform: rotate(-3deg);
+
+}
+
+/* =========================
+GOLD TEXT EFFECT
+========================= */
+
+.gold-text {
+
+background: linear-gradient(
+90deg,
+#8d6b1f,
+#d4af37,
+#fff2a8,
+#d4af37,
+#8d6b1f
+);
+
+background-size: 300%;
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+animation: goldShine 4s linear infinite;
+
+}
+
+/* =========================
+LOADING SPINNER
+========================= */
+
+.loader {
+
+width: 70px;
+height: 70px;
+
+border: 4px solid rgba(255,255,255,.1);
+
+border-top: 4px solid #d4af37;
+
+border-radius: 50%;
+
+animation: rotateSlow 1s linear infinite;
